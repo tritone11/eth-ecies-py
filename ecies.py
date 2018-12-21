@@ -5,7 +5,7 @@ import cointool
 def get_public_from_private(pk):
         return cointool.privtopub(pk)
 
-acct = w3.eth.account.create("Brain words !")
+acct = w3.eth.account.create("passphrase")
 pk = acct.privateKey
 vk = get_public_from_private(pk)
 
